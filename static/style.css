@@ -1,0 +1,100 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Noto Sans TC
+}
+
+
+.commentModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+}
+
+.modal-content{
+  display: flex;
+  position: relative;
+  margin-top: 80px;
+  width: 340px;
+  height: 275px;
+  /* border: 1px solid #888; */
+  box-shadow: 0px 4px 60px #AAAAAA;
+  background: 
+    linear-gradient(270deg, #337788 0%, #66AABB 100%),
+    white;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 340px 10px, 340px 275px;
+    background-position:0 0, 790px 80px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-content .modal-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.modal-content .input-block{
+    margin-top:5px;
+    margin-left:15px;
+    margin-right: 15px;
+}
+
+.modal-content input{
+    margin-top:10px;
+    width: 310px;
+    height: 47px;
+    font-size: 16px;
+    text-indent: 15px;
+    border-radius: 5px;
+    background-color: white;
+    border:1px solid #CCCCCC;
+    cursor:pointer;
+}
+
+.modal-content input[type=submit]{
+    background-color: #448899;
+    border:1px solid #448899;
+    font-size: 19px;
+    color:white;
+    cursor:pointer;
+}
+
+.modal-content .end-text{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 15px;
+    cursor:pointer;
+}
+
+
+.modal-content .modal-header .sig-header{
+    margin-left: 65px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.close{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.close img{
+    width: 16px; 
+    height: 16px;
+   cursor:pointer; 
+}
